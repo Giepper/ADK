@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    color: #333;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #eee;
+    height: 200vh;
+}
+header{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    background-color: transparent;
+    font-weight: bold;
+    position: fixed;
+    z-index: 999;
+}
+.leftHeader{
+    width: 80%;
+    display: flex;
+}
+.rightHeader{
+    width: 20%;
+}
+.headerElement{
+    /* border: 1px solid red; */
+}
+.logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 200px;
+    height: 25px;
+}
+.nav{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.navBtn{
+    width: 7em;
+    font-size: 15px;
+    padding: .5rem;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+.navBtn:hover{
+    border-bottom: 2px solid rgb(5, 163, 237);
+    cursor: pointer;
+}
+.mailContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+i{
+    font-size: 125%;
+}
+
+/* main */
+main{
+    width: 100%;
+    height: 100vh;
+}
+.homePage{
+    height: 100%;
+    background: url('img/bPhoto1.jpg');
+    background-size: cover;
+}
+.titleContainer{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titleContainer h1{
+    font-size: 450%;
+    -webkit-text-stroke: .5px black;
+    color: #fff;
+}
+.titleContainer h2{
+    font-size: 150%;
+    -webkit-text-stroke: .5px black;
+    color: #fff;
+}
+.servicesPage{
+    margin-top: 1rem;
+}
+.sectionTitle{
+    font-size: 500%;
+    text-align: center;
+    font-weight: bold;
+}
+.mainEl{
+    padding-top: 3rem;
+    height: 100vh;
+}
+.sectionContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionEl{
+    width: 50%;
+    height: 100%;
+}
+.photos{
+    padding-left: 1rem;
+}
+.sectionImg{
+    width: 50%;
+    height: 500px;
+    border: 2px solid rgb(5, 163, 237);
+}
+.rightPhoto{
+    position: absolute;
+    margin-left: -275px;
+    margin-top: 100px;
+    z-index: -1;
+    width: 40%;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    font-size: 250%;
+    /* border: 1px solid red; */
+}
+.sectionHeader{
+    font-weight: bold;
+    margin: 1rem 0 1rem 2rem;
+}
+.sectionInfo{
+    margin-left: 4rem;
+    font-size: 80%;
+}
+.list{
+    font-size: 80%;
+    margin-left: 4rem;
+}
+.listEl{
+    margin-top: 1rem;
+}
+dt{
+    font-weight: bold;
+}
+dd{
+    margin-left: 1rem;
+}
+
+/* other classes */
+.onScrollProperty{
+    background-color: #fff;
+    transition: .5s linear;
+}
+
+@media screen and (max-width: 1410px){
+    .sectionImg{
+        width: 60%;
+    }
+    .rightPhoto{
+        width: 45%;
+        margin-left: -375px;
+    }
+}
+@media screen and (max-width: 1260px){
+    .sectionImg{
+        width: 70%;
+    }
+    .rightPhoto{
+        width: 45%;
+    }
+    .leftHeader{
+        width: 100%;
+    }
+    .rightHeader{
+        display: none;
+    }
+}
+@media screen and (max-width: 1100px){
+    .sectionImg{
+        width: 100%;
+    }
+    .rightPhoto{
+        display: none;
+    }
+}
+@media screen and (max-width: 990px){
+    .titleContainer h1{
+        font-size: 400%;
+    }
+    header{
+        height: auto;
+    }
+    .leftHeader{
+        flex-direction: column;
+    }
+    .headerElement{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 985px){
+}
+/* RWD
+@media screen and (max-width: 1820px) {
+    .sectionImg{
+        width: 590px;
+    }
+}
+@media screen and (max-width: 1810px) {
+    .sectionImg{
+        width: 580px;
+    }
+}
+@media screen and (max-width: 1750px) {
+    .sectionImg{
+        width: 570px;
+    }
+}
+@media screen and (max-width: 1705px) {
+    .sectionImg{
+        width: 560px;
+    }
+}
+@media screen and (max-width: 1665px) {
+    .sectionImg{
+        width: 555px;
+    }
+}
+@media screen and (max-width: 1640px) {
+    .sectionImg{
+        width: 550px;
+    }
+}
+@media screen and (max-width: 1625px) {
+    .sectionImg{
+        width: 545px;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .sectionImg{
+        width: 540px;
+    }
+}
+@media screen and (max-width: 1580px) {
+    .sectionImg{
+        width: 535px;
+    }
+}
+@media screen and (max-width: 1560px) {
+    .sectionImg{
+        width: 530px;
+    }
+}
+@media screen and (max-width: 1540px) {
+    .sectionImg{
+        width: 525px;
+    }
+}
+@media screen and (max-width: 1520px) {
+    .sectionImg{
+        width: 520px;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .sectionImg{
+        width: 515px;
+    }
+}
+@media screen and (max-width: 1480px) {
+    .sectionImg{
+        width: 510px;
+    }
+}
+@media screen and (max-width: 1460px) {
+    .sectionImg{
+        width: 505px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .sectionImg{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 1420px) {
+    .sectionImg{
+        width: 495px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .sectionImg{
+        width: 490px;
+    }
+}
+@media screen and (max-width: 1380px) {
+    .sectionImg{
+        width: 485px;
+    }
+}
+@media screen and (max-width: 1360px) {
+    .sectionImg{
+        width: 480px;
+    }
+}
+@media screen and (max-width: 1340px) {
+    .sectionImg{
+        width: 475px;
+    }
+}
+@media screen and (max-width: 1320px) {
+    .sectionImg{
+        width: 470px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .sectionImg{
+        width: 465px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .sectionImg{
+        width: 460px;
+    }
+}
+@media screen and (max-width: 1260px) {
+    .sectionImg{
+        width: 455px;
+    }
+}
+@media screen and (max-width: 1240px) {
+    .leftHeader{
+        width: 100%;
+    }
+    .rightHeader{
+        display: none;
+    }
+    .sectionImg{
+        width: 450px;
+    }
+}
+@media screen and (max-width: 1220px) {
+    .sectionImg{
+        width: 445px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .sectionImg{
+        width: 440px;
+    }
+}
+@media screen and (max-width: 1180px) {
+    .sectionImg{
+        width: 435px;
+    }
+}
+@media screen and (max-width: 1160px) {
+    .sectionImg{
+        width: 430px;
+    }
+}
+@media screen and (max-width: 1140px) {
+    .sectionImg{
+        width: 425px;
+    }
+}
+@media screen and (max-width: 1120px) {
+    .sectionImg{
+        width: 420px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .sectionImg{
+        width: 415px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .sectionImg{
+        width: 410px;
+    }
+}
+@media screen and (max-width: 1060px) {
+    .sectionImg{
+        width: 405px;
+    }
+}
+@media screen and (max-width: 1040px) {
+    .sectionImg{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 1020px) {
+    .sectionImg{
+        width: 395px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    header{
+        height: auto;
+    }
+    .headerElement{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .logo{
+        font-size: 110%;
+        padding-top: 1rem;
+    }
+    .leftHeader{
+        flex-direction: column;
+    }
+    .mainEl{
+        height: 100%;
+    }
+    .titleContainer h1{
+        font-size: 400%;
+    }
+    .photos{
+        width: 40%;
+    }
+    .text{
+        width: 60%;
+    }
+    .sectionImg{
+        width: 390px;
+        height: 100%;
+    }
+    .rightPhoto{
+        display: none;
+    }
+}
+@media screen and (max-width: 940px) {
+    .sectionImg{
+        display: none;
+    }
+    .text{
+        width: 100%;
+    }
+    .sectionInfo{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 870px) {
+    .titleContainer h1{
+        font-size: 350%;
+    }
+}
+@media screen and (max-width: 760px) {
+    .titleContainer h1{
+        font-size: 300%;
+    }
+}
+@media screen and (max-width: 660px) {
+    .titleContainer h1{
+        font-size: 250%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .titleContainer h1{
+        font-size: 200%;
+    }
+    .homePage{
+        border: 1px solid red;
+    }
+} */
