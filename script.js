@@ -1,10 +1,20 @@
 const header = document.querySelector('header');
 const navBtn = document.querySelector('navBtn');
-var rect = header.getBoundingClientRect()
+const middleHeader = document.querySelector('.middleHeader');
+const modalMenu = document.querySelector('.modalMenu');
+const navBtnModal = document.querySelectorAll('.navBtnModal');
 
-function scrollBackground(){
+addEventListener('scroll', ()=>{
     header.classList.add('onScrollProperty');
     navBtn.classList.add('onScrollProperty');
-}
+}, {once : true});
 
-addEventListener('scroll', scrollBackground, {once : true})
+middleHeader.addEventListener('click', ()=>{
+    modalMenu.style.setProperty('display','block');
+});
+
+for(let x=0; x<navBtnModal.length;x++){
+    navBtnModal[x].addEventListener('click', ()=>{
+        modalMenu.style.setProperty('display','none');
+    });
+}
