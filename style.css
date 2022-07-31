@@ -161,6 +161,9 @@ dt{
 dd{
     margin-left: 1rem;
 }
+.middleHeader{
+    display: none;
+}
 
 /* other classes */
 .onScrollProperty{
@@ -212,8 +215,115 @@ dd{
     .headerElement{
         width: 100%;
     }
+    .photos{
+        display: none;
+    }
+    .text{
+        width: 100%;
+    }
 }
-@media screen and (max-width: 985px){
+@media screen and (max-width: 880px){
+    .titleContainer h1{
+        font-size: 350%;
+    }
+}
+@media screen and (max-width: 770px){
+    .titleContainer h1{
+        font-size: 300%;
+    }
+    .nav{
+        display: none;
+    }
+    .logo{
+        width: 70%;
+        font-size: 150%;
+    }
+    .middleHeader{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        font-size: 300%;
+    }
+}
+@media screen and (max-width: 660px){
+    .titleContainer h1{
+        font-size: 250%;
+    }
+}
+@media screen and (max-width: 605px) {
+    .logo{
+        font-size: 140%;
+    }
+}
+@media screen and (max-width: 565px) {
+    .logo{
+        font-size: 130%;
+    }
+    .titleContainer h1{
+        font-size: 225%;
+    }
+}
+@media screen and (max-width: 525px) {
+    .titleContainer h1{
+        font-size: 200%;
+    }
+    .text{
+        font-size: 200%;
+    }
+    .sectionInfo{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .logo{
+        font-size: 120%;
+    }
+    .sectionTitle{
+        font-size: 400%;
+    }
+}
+@media screen and (max-width: 490px) {
+    .titleContainer h1{
+        font-size: 175%;
+    }
+    .titleContainer h2{
+        font-size: 125%;
+    }
+    .mainEl{
+        padding-top: 1rem;
+    }
+    .text{
+        font-size: 175%;
+    }
+}
+@media screen and (max-width: 380px) {
+    .titleContainer h1{
+        font-size: 150%;
+    }
+    .titleContainer h2{
+        font-size: 100%;
+    }
+}
+@media screen and (max-height: 600px) {
+    .titleContainer h1{
+        font-size: 400%;
+    }
+    header{
+        height: auto;
+    }
+    .leftHeader{
+        flex-direction: column;
+    }
+    .headerElement{
+        width: 100%;
+    }
+    .photos{
+        display: none;
+    }
+    .text{
+        width: 100%;
+    }
 }
 /* RWD
 @media screen and (max-width: 1820px) {
