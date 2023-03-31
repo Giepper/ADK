@@ -150,10 +150,15 @@ main{
     /* border: 1px solid red; */
     gap: 15px;
     padding: 15px;
+    filter: opacity(1);
 }
 .galleryPhoto{
     width: 100%;
     cursor: pointer;
+}
+.galleryPhoto:hover{
+    transform: scale(1.1);
+    transition: .1s linear;
 }
 .imgHref{
     /* border: 1px solid red; */
